@@ -194,7 +194,7 @@ describe('Central de Atendimento ao Cliente TAT', () => {
     })
 
     it('exibe mensagem de erro quando o telefone se torna obrigatório mas não é preenchido antes do envio do formulário', () => {
-        cy.get('').type('Marcos');
+        cy.get('#firstName').type('Marcos');
         cy.get('#lastName').type('Atayde');
         cy.get('#email').type('marcosatayde@ataydequality.com.br');
         cy.get('#phone-checkbox').check();
